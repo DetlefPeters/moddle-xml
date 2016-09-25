@@ -37,33 +37,13 @@ module.exports = function(grunt) {
           fix: true
         }
       }
-    },
-
-    mochaTest: {
-      test: {
-        options: {
-          reporter: 'spec',
-          require: [
-            './test/expect.js'
-          ]
-        },
-        src: ['test/**/*.js']
-      }
-    },
-
-    watch: {
-      test: {
-        files: [ '<%= config.sources %>/**/*.js', '<%= config.tests %>/**/*.js' ],
-        tasks: [ 'test']
-      }
     }
+
   });
 
   // tasks
 
-  grunt.registerTask('test', [ 'mochaTest' ]);
-  grunt.registerTask('auto-test', [ 'test', 'watch:test' ]);
   grunt.registerTask('lint', [ 'eslint:check' ]);
 
-  grunt.registerTask('default', [ 'lint', 'test' ]);
+  grunt.registerTask('default', [ 'lint' ]);
 };

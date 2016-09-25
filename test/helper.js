@@ -1,23 +1,26 @@
-'use strict';
+import {
+  existsSync,
+  readFileSync,
+  mkdirSync
+} from 'fs';
 
-var fs = require('fs');
+import { map } from 'lodash';
 
-var map = require('lodash/map');
+import Moddle from 'moddle';
 
-var Moddle = require('moddle');
 
-function ensureDirExists(dir) {
+export function ensureDirExists(dir) {
 
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir);
+  if (!existsSync(dir)) {
+    mkdirSync(dir);
   }
 }
 
-function readFile(filename) {
-  return fs.readFileSync(filename, { encoding: 'UTF-8' });
+export function readFile(filename) {
+  return readFileSync(filename, { encoding: 'UTF-8' });
 }
 
-function createModelBuilder(base) {
+export function createModelBuilder(base) {
 
   var cache = {};
 
@@ -47,7 +50,3 @@ function createModelBuilder(base) {
 
   return createModel;
 }
-
-module.exports.readFile = readFile;
-module.exports.ensureDirExists = ensureDirExists;
-module.exports.createModelBuilder = createModelBuilder;

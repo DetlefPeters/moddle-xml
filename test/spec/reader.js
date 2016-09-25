@@ -1,9 +1,9 @@
-'use strict';
+import Reader from '../../lib/reader';
 
-var Reader = require('../../lib/reader'),
-    Helper = require('../helper'),
-    readFile = Helper.readFile,
-    createModelBuilder = Helper.createModelBuilder;
+import {
+  readFile,
+  createModelBuilder
+} from '../helper';
 
 
 describe('Reader', function() {

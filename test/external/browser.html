@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script src="../../node_modules/moddle/dist/bundle.js"></script>
+  <script src="../../dist/bundle.js"></script>
+
+  <script>
+    var Moddle = window.Moddle;
+    var Reader = window.ModdleXML.Reader;
+
+    if (typeof Moddle !== 'undefined') {
+      document.write('<h2>Moddle found</h2>');
+    }
+
+    if (typeof ModdleXML !== 'undefined' && ModdleXML.Reader && ModdleXML.Writer) {
+      document.write('<h2>ModdleXML.{Reader, Writer} found</h2>');
+    }
+  </script>
+</body>
+</html>
