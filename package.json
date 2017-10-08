@@ -54,7 +54,7 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "lodash": "^3.0.0",
+    "lodash": "^4.17.4",
     "moddle": "^1.0.0",
     "sax": "~0.6.0",
     "tiny-stack": "^0.1.0"
