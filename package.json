@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "lodash-es": "^4.17.4",
-    "moddle": "^1.0.0",
+    "moddle": "github:bpmn-io/moddle#ES2015",
     "sax": "~0.6.0",
     "tiny-stack": "^0.1.0"
   }
