@@ -21,16 +21,10 @@ module.exports = {
       root: 'Moddle'
     }
   },
-  resolve: {
-    alias: {
-      lodash: 'lodash-es'
-    }
-  },
   module: {
     rules: [{
       use: 'babel-loader',
-      test: /\.js$/,
-      exclude: /node_modules/
+      test: /\.js$/
     }]
   },
   plugins: [

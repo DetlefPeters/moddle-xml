@@ -2,7 +2,7 @@ import Writer from '../../lib/writer';
 
 import { createModelBuilder } from '../helper';
 
-import { assign } from 'lodash';
+import { assign } from 'lodash-es';
 
 
 describe('Writer', function() {
