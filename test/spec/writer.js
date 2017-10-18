@@ -284,11 +284,11 @@ describe('Writer', function() {
 
         // then
         expect(xml).to.eql(
-            '<b:SubRoot xmlns:b="http://base" ' +
-                       'xmlns:c="http://custom" ' +
-                       'ownAttr="OWN" ' +
-                       'c:customAttr="1" ' +
-                       'subAttr="FOO" />');
+          '<b:SubRoot xmlns:b="http://base" ' +
+                     'xmlns:c="http://custom" ' +
+                     'ownAttr="OWN" ' +
+                     'c:customAttr="1" ' +
+                     'subAttr="FOO" />');
       });
 
 
