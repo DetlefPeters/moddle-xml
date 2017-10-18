@@ -3,7 +3,7 @@
 import {
   Reader,
   Writer
-} from '../../';
+} from '../../lib/index.js';
 
 
 describe('moddle-xml', function() {
