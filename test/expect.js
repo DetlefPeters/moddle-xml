@@ -1,5 +1,5 @@
 require('babel-register')({
-  ignore: /node_modules\/(?!(lodash-es|moddle))/
+  ignore: /node_modules\/(?!(min-dash|moddle))/
 });
 
 var chai = require('chai');
