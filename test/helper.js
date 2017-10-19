@@ -4,7 +4,7 @@ import {
   mkdirSync
 } from 'fs';
 
-import { map } from 'lodash-es';
+import map from 'lodash-es/map';
 
 import Moddle from 'moddle';
 
