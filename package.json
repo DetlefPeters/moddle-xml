@@ -55,7 +55,7 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
-    "min-dash": "github:bpmn-io/min-dash",
+    "min-dash": "^1.0.0",
     "moddle": "github:bpmn-io/moddle#ES2015",
     "sax": "~0.6.0",
     "tiny-stack": "^0.1.0"
